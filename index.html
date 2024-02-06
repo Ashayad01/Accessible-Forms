@@ -6,6 +6,7 @@
     <meta name="author" content="Ashaya Stewart" />
     <title>Form Activity Solution File</title>
     <!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a href="#main-content" id="skipLink">Skip to main content</a>
@@ -36,6 +37,54 @@
         </p>
 
         <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+        <form>
+          <label for="myName">Full Name<span class="required">*</span></label>
+          <input
+            type="text"
+            name="myName"
+            id="myName"
+            autocomplete="name"
+            required
+          />
+
+          <label for="myEmail">Email<span class="required">*</span></label>
+          <input
+            type="email"
+            name="myEmail"
+            id="myEmail"
+            autocomplete="email"
+            required
+          />
+
+          <label for="myPhone">Phone<span class="required">*</span></label>
+          <input
+            tpye="tel"
+            name="myPhone"
+            id="myPhone"
+            autocomplete="tel"
+            required
+          />
+
+          <fieldset>
+            <legend>Prefered Contact<span class="required">*</span></legend>
+            <input
+              type="radio"
+              name="contactPref"
+              id="prefPhone"
+              required
+              check
+            />
+            <label for="prePfhone">Phone</label>
+
+            <input type="radio" name="contactPref" id="prefEmail" />
+            <label for="prefEmail">Email</label>
+          </fieldset>
+
+          <label for="message">Message<span class="required">*</span></label>
+          <textarea required></textarea>
+
+          <input type="submit" name="mySubmit" id="mySubmit" />
+        </form>
       </article>
     </main>
     <footer>
